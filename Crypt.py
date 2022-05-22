@@ -8,7 +8,6 @@ if len(password) >= 32:
     exit()
 elif len(password) < 32:
     passwordmod = password + "=" * (32 - len(password))
-    print(passwordmod)
 key = base64.urlsafe_b64encode(passwordmod.encode("utf-8"))
 files = []
 
